@@ -67,24 +67,28 @@ python Generator_SSH.py <option>
   - `Publish`: Distribute keys to hosts specified in `device.json`.  
   - `All`: Perform both operations.  
 
-Alternatively, the user configuration can be performed manually or as a one-time setup for the main infrastructure before cloning ACME directories and distributing the workload among students. For manual setup, ensure the following steps are completed for each host:
+Ecco la sezione aggiornata per il **README**, che include la possibilità di eseguire manualmente la configurazione degli utenti tester o di configurarla una volta sola per l'intera infrastruttura principale prima della clonazione delle ACME:  
 
-Create a tester user.
-Copy the SSH public key to:
-/home/tester/.ssh/authorized_keys for tester.
-/root/.ssh/authorized_keys for root.
-Ensure all hosts are accessible via the SSH key.
-Once the main infrastructure is set up, ACME directories can be cloned and distributed as needed without repeating the user configuration.
+---
 
 ### **Step 4: Configure Testing Users**  
-Use the `UserGenerate.Script` to create testing users:  
+The `UserGenerate.Script` can automate the creation and configuration of testing users (`tester`) on each host. Run the script as follows:  
 ```bash  
 python UserGenerate.Script  
 ```  
-This script:  
-1. Creates a `tester` user on each host.  
-2. Configures the SSH public key for `tester`.  
-3. Sets up the key in both `root` and `tester` directories for SSH access.  
+This script will:  
+1. Create a `tester` user on each host.  
+2. Configure the SSH public key for the `tester` user.  
+3. Add the same SSH key to both `root` and `tester` directories to enable SSH access.  
+
+Alternatively, the user configuration can be performed manually or as a one-time setup for the main infrastructure before cloning ACME directories and distributing the workload among students. For manual setup, ensure the following steps are completed for each host:  
+1. Create a `tester` user.  
+2. Copy the SSH public key to:  
+   - `/home/tester/.ssh/authorized_keys` for `tester`.  
+   - `/root/.ssh/authorized_keys` for `root`.  
+3. Ensure all hosts are accessible via the SSH key.  
+
+Once the main infrastructure is set up, ACME directories can be cloned and distributed as needed without repeating the user configuration.  
 
 ---
 
