@@ -1,0 +1,22 @@
+[
+	{
+        "IP": "100.100.2.254",
+        "User": "tester",
+		"Password": "Passw0rd.1",
+        "Name": "Arpwatch"
+    },
+	{
+        "IP": "100.100.2.100",
+        "User": "tester",
+		"Password": "Passw0rd.1",
+        "Name": "Kali"
+    },
+	{
+        "IP": "100.100.4.100",
+        "User": "tester",
+		"Password": "Passw0rd.1",
+        "Name": "Client-Ext1"
+    }
+	
+	
+]

@@ -1,0 +1,10 @@
+-Si presuppone che, almeno all'inizio, il "PermitRootLogin yes" ci sia per tuti gli host di devices.json...OPPURE, di aver lanciato prima il "distributore" di chiavi a tutti.
+In quel caso puoi anche usare il "vecchio" comando e non prevedere login con password.
+
+-Inoltre questo codice, ti permetterà di avere:
+1-Un utente "tester" per ogni Host.
+2-La chiave pubblica settata in "/home/tester/.ssh/authorized_keys"...con quindi la possibilità di fare "ssh -i SSHKey tester@IP"
+3-La SSHKey stessa copiata e messa anche nella sezione "root" di ogni host, in particolare dentro ".ssh/authorized_keys"... con quindi la possibilità di fare "ssh -i SSHKey root@IP".
+	3.5-La SSHKey stessa copiata e messa anche nella sezione "tester" di ogni host, meno "Kali, Client-EXT".
+
+Il codice ti prepara l'enviroment per il verificatore sostanzialmente, basta solo aprire la connessione VPN con l'ACME e avere "device.json" dentro la cartella.

@@ -1,0 +1,41 @@
+[
+	
+	{
+        "IP": "100.100.1.2",
+        "User": "root",
+		"Password": "Passw0rd.1",
+        "Name": "DNS Server"
+    },
+	{
+        "IP": "100.100.1.3",
+        "User": "root",
+		"Password": "Passw0rd.1",
+        "Name": "Log Server"
+    },
+	{
+        "IP": "100.100.6.2",
+        "User": "root",
+		"Password": "Passw0rd.1",
+        "Name": "Web Server"
+    },
+	{
+        "IP": "100.100.6.3",
+        "User": "root",
+		"Password": "Passw0rd.1",
+        "Name": "Proxy Server"
+    },
+	{
+        "IP": "100.100.2.100",
+        "User": "tester",
+		"Password": "Passw0rd.1",
+        "Name": "Kali"
+    },
+	{
+        "IP": "100.100.4.100",
+        "User": "tester",
+		"Password": "Passw0rd.1",
+        "Name": "Client-Ext1"
+    }
+	
+	
+]

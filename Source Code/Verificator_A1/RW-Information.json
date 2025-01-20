@@ -1,0 +1,18 @@
+[
+    {
+        "Role": "RW-Admin",
+		"RW-Type": "Admin"
+    },
+	{
+        "Role": "RW_Privileged",
+		"RW-Type": "Operator",
+		"Username": "Alice",
+		"Password": "alice"
+    },
+	{
+        "Role": "RW_User",
+		"RW-Type": "Employee",
+		"Username": "Bob",
+		"Password": "bob"
+    } 
+]
