@@ -66,9 +66,6 @@ python Generator_SSH.py <option>
   - `Generate`: Generate SSH keys in the working directory.  
   - `Publish`: Distribute keys to hosts specified in `device.json`.  
   - `All`: Perform both operations.  
-
-Ecco la sezione aggiornata per il **README**, che include la possibilità di eseguire manualmente la configurazione degli utenti tester o di configurarla una volta sola per l'intera infrastruttura principale prima della clonazione delle ACME:  
-
 ---
 
 ### **Step 4: Configure Testing Users**  
