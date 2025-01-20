@@ -67,6 +67,15 @@ python Generator_SSH.py <option>
   - `Publish`: Distribute keys to hosts specified in `device.json`.  
   - `All`: Perform both operations.  
 
+Alternatively, the user configuration can be performed manually or as a one-time setup for the main infrastructure before cloning ACME directories and distributing the workload among students. For manual setup, ensure the following steps are completed for each host:
+
+Create a tester user.
+Copy the SSH public key to:
+/home/tester/.ssh/authorized_keys for tester.
+/root/.ssh/authorized_keys for root.
+Ensure all hosts are accessible via the SSH key.
+Once the main infrastructure is set up, ACME directories can be cloned and distributed as needed without repeating the user configuration.
+
 ### **Step 4: Configure Testing Users**  
 Use the `UserGenerate.Script` to create testing users:  
 ```bash  
